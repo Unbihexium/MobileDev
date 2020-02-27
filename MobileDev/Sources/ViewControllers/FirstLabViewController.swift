@@ -9,11 +9,26 @@
 import Foundation
 import UIKit
 
-class FirstLabViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class FirstLabViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return languages.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return languages[row]
+    }
 
     let cellIdentifier = "puzzleCell"
+    
+    let languages = ["Python", "C++", "C#", "Java", "Rust"]
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var languagesPicker: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +36,11 @@ class FirstLabViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.navigationItem.title = "Первая лабораторная"
         
         self.collectionView.register(UINib(nibName:"PuzzleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+        
+        languagesPicker.dataSource = self
+        languagesPicker.delegate = self
+
+
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
