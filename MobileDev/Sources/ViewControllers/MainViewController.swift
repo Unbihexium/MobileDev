@@ -20,5 +20,10 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func secondLabClick(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "SecondLabViewController") as! SecondLabViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 

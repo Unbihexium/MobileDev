@@ -16,6 +16,7 @@
 		F1CD2355240745A700FB2015 /* FirstLabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD2354240745A700FB2015 /* FirstLabViewController.swift */; };
 		F1CD2362240755E300FB2015 /* PuzzleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD2360240755E300FB2015 /* PuzzleCollectionViewCell.swift */; };
 		F1CD2363240755E300FB2015 /* PuzzleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CD2361240755E300FB2015 /* PuzzleCollectionViewCell.xib */; };
+		F1CD238724078B2700FB2015 /* SecondLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD238624078B2700FB2015 /* SecondLabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F1CD2354240745A700FB2015 /* FirstLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLabViewController.swift; sourceTree = "<group>"; };
 		F1CD2360240755E300FB2015 /* PuzzleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1CD2361240755E300FB2015 /* PuzzleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PuzzleCollectionViewCell.xib; sourceTree = "<group>"; };
+		F1CD238624078B2700FB2015 /* SecondLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F1CD23412407413700FB2015 /* MainViewController.swift */,
 				F1CD2354240745A700FB2015 /* FirstLabViewController.swift */,
+				F1CD238624078B2700FB2015 /* SecondLabView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CD238724078B2700FB2015 /* SecondLabView.swift in Sources */,
 				F1CD23422407413700FB2015 /* MainViewController.swift in Sources */,
 				F1CD2355240745A700FB2015 /* FirstLabViewController.swift in Sources */,
 				F1CD233E2407413700FB2015 /* AppDelegate.swift in Sources */,

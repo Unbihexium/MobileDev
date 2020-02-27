@@ -24,6 +24,14 @@
                                     <action selector="firstLabClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsB-0b-VOT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDA-SM-bLt">
+                                <rect key="frame" x="21" y="147" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Вторая лабораторная"/>
+                                <connections>
+                                    <action selector="secondLabClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Otg-SM-nuL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,6 +41,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Second Lab View Controller-->
+        <scene sceneID="SYj-59-zHK">
+            <objects>
+                <hostingController storyboardIdentifier="SecondLabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D5y-jt-C7I" customClass="SecondLabViewController" customModule="MobileDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qH2-65-HXo"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2D-EK-KR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3024.6376811594205" y="780.80357142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tBr-Rq-tx2">
@@ -351,7 +369,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1X-xb-BRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="-632"/>
+            <point key="canvasLocation" x="2162" y="-659"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YIS-dw-FVO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sLe-Cx-FBM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bTn-67-6zF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D5y-jt-C7I" kind="relationship" relationship="rootViewController" id="QVu-F6-gQm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuM-vd-IWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114.4927536231885" y="780.80357142857144"/>
         </scene>
     </scenes>
 </document>
