@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F148F6CF240B63AE00BEE8EF /* FourthLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148F6CE240B63AE00BEE8EF /* FourthLabView.swift */; };
+		F148F6D2240B692F00BEE8EF /* ShowResultDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148F6D1240B692F00BEE8EF /* ShowResultDelegate.swift */; };
+		F148F6D4240B698D00BEE8EF /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148F6D3240B698D00BEE8EF /* FormView.swift */; };
 		F1CD233E2407413700FB2015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD233D2407413700FB2015 /* AppDelegate.swift */; };
 		F1CD23402407413700FB2015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD233F2407413700FB2015 /* SceneDelegate.swift */; };
 		F1CD23422407413700FB2015 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD23412407413700FB2015 /* MainViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F148F6CE240B63AE00BEE8EF /* FourthLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthLabView.swift; sourceTree = "<group>"; };
+		F148F6D1240B692F00BEE8EF /* ShowResultDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowResultDelegate.swift; sourceTree = "<group>"; };
+		F148F6D3240B698D00BEE8EF /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		F1CD233A2407413700FB2015 /* MobileDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CD233D2407413700FB2015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CD233F2407413700FB2015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F148F6D0240B690B00BEE8EF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F148F6D1240B692F00BEE8EF /* ShowResultDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F1CD23312407413600FB2015 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +91,7 @@
 		F1CD2351240744A400FB2015 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F148F6D0240B690B00BEE8EF /* Protocols */,
 				F1CD235B24074DF800FB2015 /* CellsControllers */,
 				F1CD23562407486800FB2015 /* Cells */,
 				F1CD2353240744BE00FB2015 /* ViewControllers */,
@@ -99,6 +114,8 @@
 				F1CD23412407413700FB2015 /* MainViewController.swift */,
 				F1CD2354240745A700FB2015 /* FirstLabViewController.swift */,
 				F1CD238624078B2700FB2015 /* SecondLabView.swift */,
+				F148F6CE240B63AE00BEE8EF /* FourthLabView.swift */,
+				F148F6D3240B698D00BEE8EF /* FormView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,7 +212,10 @@
 				F1CD23422407413700FB2015 /* MainViewController.swift in Sources */,
 				F1CD2355240745A700FB2015 /* FirstLabViewController.swift in Sources */,
 				F1CD233E2407413700FB2015 /* AppDelegate.swift in Sources */,
+				F148F6CF240B63AE00BEE8EF /* FourthLabView.swift in Sources */,
 				F1CD2362240755E300FB2015 /* PuzzleCollectionViewCell.swift in Sources */,
+				F148F6D4240B698D00BEE8EF /* FormView.swift in Sources */,
+				F148F6D2240B692F00BEE8EF /* ShowResultDelegate.swift in Sources */,
 				F1CD23402407413700FB2015 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

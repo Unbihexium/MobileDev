@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMM-jS-8Zn">
-                                <rect key="frame" x="20" y="115" width="158" height="30"/>
+                                <rect key="frame" x="20" y="111" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Первая лабораторная"/>
                                 <connections>
@@ -25,11 +25,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDA-SM-bLt">
-                                <rect key="frame" x="21" y="147" width="156" height="30"/>
+                                <rect key="frame" x="20" y="149" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Вторая лабораторная"/>
                                 <connections>
                                     <action selector="secondLabClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Otg-SM-nuL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHh-kb-hfW">
+                                <rect key="frame" x="20" y="187" width="179" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Четвертая лабораторная"/>
+                                <connections>
+                                    <action selector="fourthLabClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoM-oH-gaG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,6 +59,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2D-EK-KR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3024.6376811594205" y="780.80357142857144"/>
+        </scene>
+        <!--Fourth Lab View Controller-->
+        <scene sceneID="DKJ-cF-d2d">
+            <objects>
+                <hostingController storyboardIdentifier="FourthLabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="utY-dM-mmq" customClass="FourthLabViewController" customModule="MobileDev" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9oH-Fn-fDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3051" y="1531"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tBr-Rq-tx2">
