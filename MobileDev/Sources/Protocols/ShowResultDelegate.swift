@@ -7,5 +7,5 @@
 //
 
 protocol ShowResultDelegate {
-    func showResult()
+    func showResult(_ result: String)
 }

@@ -16,6 +16,8 @@ struct FourthLabView: View {
     @State var present2 = false
     @State var present3 = false
     
+    @State var functionResult = "None"
+    
     @State var data = PersonalData()
     
     var body: some View {
@@ -42,7 +44,7 @@ struct FourthLabView: View {
                 }){
                     Text("Третья задача")
                 }.sheet(isPresented: $present3) {
-                    FormView()
+                    MathView(self)
                 }
                 Spacer()
                 Form{
@@ -50,17 +52,17 @@ struct FourthLabView: View {
                         HStack {
                             Text("Фамилия")
                             Spacer()
-                            Text("\(data.family)")
+                            Text("\(data.family)").foregroundColor(.gray)
                         }
                         HStack {
                             Text("Имя")
                             Spacer()
-                            Text("\(data.name)")
+                            Text("\(data.name)").foregroundColor(.gray)
                         }
                         HStack {
                             Text("Отчество")
                             Spacer()
-                            Text("\(data.patronymic)")
+                            Text("\(data.patronymic)").foregroundColor(.gray)
                         }
                         DatePicker(selection: .constant(data.date), displayedComponents: .date ,label: {
                             Text("Дата рождения")
@@ -70,17 +72,17 @@ struct FourthLabView: View {
                         HStack {
                             Text("Телефон")
                             Spacer()
-                            Text("\(data.phone)")
+                            Text("\(data.phone)").foregroundColor(.gray)
                         }
                         HStack {
                             Text("Email")
                             Spacer()
-                            Text("\(data.email)")
+                            Text("\(data.email)").foregroundColor(.gray)
                         }
                         
                     }
                 }
-                Text("Test")
+                Text(functionResult)
                 
             }
             Spacer()
@@ -164,3 +166,13 @@ class FourthLabViewController: UIHostingController<FourthLabView> {
 }
 
 
+extension FourthLabView: ShowResultDelegate {
+    
+    func showResult(_ result: String) {
+        guard let res = Double(result) else {
+            self.functionResult = "None"
+            return
+        }
+        self.functionResult = "\(cos(res))"
+    }
+}
